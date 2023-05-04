@@ -262,7 +262,8 @@ export function generateBucketsByColor(data, imgWidth, numOfBuckets, colorKey) {
 
     for (let k = 0; k < numOfBuckets; k++) {
         const startVal = k === 0 ? bucketSize * k : bucketSize * k + 1;
-        const endVal = startVal + bucketSize - 1;
+        const endVal =
+            k === 0 ? startVal + bucketSize : startVal + bucketSize - 1;
 
         const valCount = { R: 0, G: 0, B: 0 };
 

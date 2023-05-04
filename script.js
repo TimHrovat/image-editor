@@ -11,6 +11,7 @@ const filterButtons = document.querySelectorAll(".apply-filter-button");
 const btnRemoveRect = document.getElementById("btn-remove-rect");
 const stackContainer = document.getElementById("stack-container");
 const matrixInput = document.getElementById("matrix-input");
+
 let stack = [];
 let x, y, oldx, oldy;
 let showDrag = false;
@@ -208,7 +209,7 @@ async function useWorker() {
             tmpCanvas.height
         ); //podatki o sliki
 
-        const worker = new Worker("worker.js", { type: "module" });
+        const worker = new Worker("./worker.js", { type: "module" });
 
         worker.postMessage([
             imgData.data,

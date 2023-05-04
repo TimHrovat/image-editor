@@ -7,7 +7,7 @@ export function updateChart(data, width) {
         backgroundColor: "#282828",
         animationEnabled: true,
         title: {
-            text: "Histogram",
+            text: "Hystogram",
             fontColor: "#fff",
         },
         axisX: {
@@ -18,7 +18,7 @@ export function updateChart(data, width) {
             tickColor: "#fff",
         },
         axisY: {
-            title: "Histogram",
+            title: "Hystogram",
             titleFontColor: "#fff",
             lineColor: "#fff",
             labelFontColor: "#fff",
